@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login3"
+        android:orientation="vertical">
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/inicio"/>
+                  </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:orientation="vertical"
+                android:gravity="center"><![CDATA[
+
+            >
+
+                ]]>
+
+                <TextView
+
+                    android:layout_width="250dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:fontFamily="@font/login"
+                    android:text="@string/Users"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="35dp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/EditText_User_login"
+                    android:layout_width="250dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:padding="10dp"
+                    android:hint="@string/app_User"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_hit"
+                    android:background="@color/purple_666"
+                    />
+
+                <TextView
+
+                    android:layout_width="250dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:paddingTop="30px"
+                    android:text="@string/Passwords"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/login"
+                    android:textSize="35dp"
+                    />
+                <EditText
+                    android:id="@+id/EditText_Password_login"
+                    android:layout_width="250dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:hint="@string/app_Password"
+                    android:padding="10dp"
+                    android:background="@color/purple_666"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_hit"
+                    android:inputType="textPassword"/>
+
+
+                <Button
+                    android:id="@+id/Btn_login_login"
+                    android:layout_width="250dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/login"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:layout_margin="20px"
+                    android:enabled="false"
+                    android:text="@string/app_log_in">
+
+
+                </Button>
+
+             </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

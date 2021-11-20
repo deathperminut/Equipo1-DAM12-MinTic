@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable-v24/icono.xml" value="0.2703125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/border.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/circle.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/circle2.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/edittextborderredondo.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2703125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.2703125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2703125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/imag.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/imag2.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/drawable/radius_layout.xml" value="0.2203125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/font/font.xml" value="0.284375" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout-land/activity_login.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout-land/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout-land/activity_register.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/activity_drawermenu.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/activity_terms.xml" value="0.24682971014492755" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/activity_termsconditions.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/app_bar_drawermenu.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/circle.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/content_drawermenu.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/fragment_gallery.xml" value="0.152" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/fragment_home.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/fragment_slideshow.xml" value="0.2" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/fragment_updateproduct.xml" value="0.264" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/nav_header_drawermenu.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/row_item_buy.xml" value="0.115625" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/layout/row_item_productos.xml" value="0.2210144927536232" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/menu/drawermenu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/Sebastian/AndroidStudioProjects/Mobil1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1956521739130435" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

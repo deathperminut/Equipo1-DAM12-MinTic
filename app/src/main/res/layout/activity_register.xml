@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:layout_margin="55dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/registro"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="75"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center"
+            >
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/zone"
+        />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="left"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:text="@string/Name"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zone"
+                android:layout_marginLeft="40dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/EditText_Name_Register"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="20"
+                android:hint="@string/EnterName"
+                android:background="@color/Blue_666"
+                android:layout_margin="30dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hit"
+                android:singleLine="true"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:text="@string/EMAIL"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zone"
+                android:layout_marginLeft="40dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/EditText_User_Register"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:paddingLeft="10dp"
+                android:hint="@string/app_User"
+                android:background="@color/Blue_666"
+                android:layout_margin="30dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hit"
+                android:singleLine="true"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:text="@string/Passwords"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/zone"
+                android:layout_marginLeft="40dp"
+
+                />
+
+
+            <EditText
+                android:id="@+id/EditText_Password_Register"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:paddingLeft="10dp"
+                android:hint="@string/app_Password"
+                android:background="@color/Blue_666"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_hit"
+                android:singleLine="true"
+                android:inputType="textPassword"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/Checkbox_Register"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="35dp"/>
+
+            <TextView
+                android:id="@+id/EditText_Terms"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/Terms"
+                android:textSize="20sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/white"/>
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="center">
+            <Button
+                android:id="@+id/Btn_register_register"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/REGISTER"
+                android:fontFamily="@font/zone"
+                android:layout_marginBottom="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

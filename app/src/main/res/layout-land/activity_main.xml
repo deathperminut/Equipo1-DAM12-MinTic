@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="@drawable/main"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ecommerce"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:gravity="center"
+            android:layout_margin="30dp"
+
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_log_in"
+                android:id="@+id/Btn_login"
+                android:textSize="20dp"
+                android:fontFamily="@font/login"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Btn_register"
+
+                android:text="@string/app_Register"
+                android:textSize="20dp"
+                android:fontFamily="@font/login"
+                />
+
+
+
+
+
+            <Button
+                android:id="@+id/Btn_Exit"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_Exit"
+                android:textSize="20dp"
+                android:fontFamily="@font/login"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Blue_666"
+        android:gravity="center">
+
+        <TextView
+
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#080E1B"
+            android:gravity="center"
+            android:fontFamily="@font/greconian"
+            android:text="@string/app_Name"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Mobil1</string>
+    <string name="app_log_in">log in</string>
+    <string name="app_Register">Register</string>
+    <string name="app_Info">Info</string>
+    <string name="app_Exit">Exit</string>
+    <string name="app_Name">G Deal</string>
+    <string name="app_User">Enter User</string>
+    <string name="app_Password">Enter Password</string>
+    <string name="title_activity_drawermenu">drawermenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Users">USER</string>
+    <string name="delete">DELETE</string>
+    <string name="miperfil">MY PROFILE</string>
+    <string name="Passwords">PASSWORD</string>
+    <string name="Name">NAME</string>
+    <string name="EnterName">Enter Name</string>
+    <string name="Terms">Terms and Conditions</string>
+    <string name="REGISTER">REGISTER</string>
+    <string name="Edit">Edit Profile</string>
+    <string name="EMAIL">EMAIL</string>
+    <string name="compras">Bought-Products</string>
+    <string name="MyProducts">My Products</string>
+    <string name="menu_Add">Add Products</string>
+    <string name="menu_Add2">Add Product</string>
+    <string name="nombreP">Name Product</string>
+    <string name="Cantidad">amount</string>
+    <string name="precio">Price $</string>
+    <string name="add">ADD</string>
+    <string name="enterprecio">Enter Price</string>
+    <string name="EnterDetails">Enter Details</string>
+    <string name="camera">ADD PICTURE</string>
+    <string name="Entercantidad">Enter amount</string>
+    <string name="TermsConditions">Services and Statements of Work the event Client finds any Services provided hereunder to be defective or nonconforming during the warranty period, subject to the limitations set forth above, Service Provider shall promptly correct such Services to the reasonable satisfaction of Client in accordance with the specifications set forth in the SOW. In the event such corrected Services fail to comply with the specifications set forth in the SOW, then at Client’s option, Service Provider shall again promptly correct such Services or shall reimburse to Client the payments made to Service Provider for such Services. The foregoing constitutes Client</string>
+
+    <string name="slogan">Good Deals With One Click</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_shop">Shop</string>
+    <string name="menu_shoppingCar">Shopping Car</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_exit">Exit</string>
+    <string name="filtrar">Enter Key Words</string>
+    <string name="Buscar">Find</string>
+    <string name="detalles">DETAILS</string>
+    <string name="añadir">ADD TO THE CAR</string>
+    <string name="products">PRODUCTS</string>
+    <string name="count">COUNT</string>
+    <string name="list">LIST</string>
+    <string name="forsale">For Sale</string>
+    <string name="buy">BUY</string>
+
+    <string name="historial">Purchase History</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -88,7 +88,8 @@
                         android:background="@color/purple_666"
                         android:singleLine="true"
                         android:textColor="@color/white"
-                        android:textColorHint="@color/white_hit"/>
+                        android:textColorHint="@color/white_hit"
+                        android:inputType="textPassword"/>
 
 
                     <Button

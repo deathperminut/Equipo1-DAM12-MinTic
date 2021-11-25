@@ -15,6 +15,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="Users">USER</string>
+    <string name="vendedor">seller</string>
     <string name="delete">DELETE</string>
     <string name="miperfil">MY PROFILE</string>
     <string name="Passwords">PASSWORD</string>

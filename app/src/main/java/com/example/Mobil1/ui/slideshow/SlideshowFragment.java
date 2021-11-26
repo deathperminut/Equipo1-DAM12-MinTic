@@ -22,6 +22,7 @@ import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.example.Mobil1.LoginActivity;
 import com.example.Mobil1.R;
@@ -43,14 +44,14 @@ public class SlideshowFragment extends Fragment {
                 new ViewModelProvider(this).get(SlideshowViewModel.class);
 
         View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        Button bottom_Profile_hist=root.findViewById(R.id.bottom_Profile_hist);
-        Button bottom_products=root.findViewById(R.id.bottom_Products);
-        imagen=root.findViewById(R.id.imagen_perfil);
-        textV_profile=root.findViewById(R.id.TextV_profile);
-        mipreferencia=getActivity().getSharedPreferences("MI_PREFERENCIA", Context.MODE_PRIVATE);
-        String usuario=mipreferencia.getString("usuario","");
+        Button bottom_Profile_hist = root.findViewById(R.id.bottom_Profile_hist);
+        Button bottom_products = root.findViewById(R.id.bottom_Products);
+        imagen = root.findViewById(R.id.imagen_perfil);
+        textV_profile = root.findViewById(R.id.TextV_profile);
+        mipreferencia = getActivity().getSharedPreferences("MI_PREFERENCIA", Context.MODE_PRIVATE);
+        String usuario = mipreferencia.getString("usuario", "");
 
-        if(usuario!=""){
+        if (usuario != "") {
 
             textV_profile.setText(usuario);
         }
@@ -68,6 +69,18 @@ public class SlideshowFragment extends Fragment {
         roundedDrawable.setCornerRadius(originalBitmap.getHeight());
 
         imagen.setImageDrawable(roundedDrawable);
+        bottom_Profile_hist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(getActivity(),R.id.nav_host_fragment_content_drawermenu).navigate(R.id.nav_historial);
+            }
+        });
+        bottom_products.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(getActivity(),R.id.nav_host_fragment_content_drawermenu).navigate(R.id.nav_AddProduct);
+            }
+        });
 
         return root;
     }

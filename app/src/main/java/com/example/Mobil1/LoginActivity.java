@@ -1,5 +1,6 @@
 package com.example.Mobil1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -7,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,11 +16,20 @@ import android.widget.Toast;
 
 import com.example.Mobil1.database.model.User;
 import com.example.Mobil1.database.model.UserDatabase;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.lang.ref.WeakReference;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private UserDatabase database;
@@ -26,12 +37,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     Button Btn_login_login;
     EditText EditText_User_login;
     EditText EditText_Password_login;
+    FirebaseFirestore db;
     private SharedPreferences mipreferencia;
     private List<User> userRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        db = FirebaseFirestore.getInstance();
         mipreferencia=getSharedPreferences("MI_PREFERENCIA",MODE_PRIVATE);
         String usuario=mipreferencia.getString("usuario","");
         if(usuario!=""){
@@ -135,7 +148,38 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             String usuario=EditText_User_login.getText().toString();
             String contra=EditText_Password_login.getText().toString();
-            new loginTask(this,usuario,md5(contra)).execute();
+
+            DocumentReference docRef = db.collection("users").document(usuario);
+            docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    if (task.isSuccessful()) {
+                        DocumentSnapshot document = task.getResult();
+                        if (document.exists()) {
+                            Log.d("TAG", "DocumentSnapshot data: " + document.getData());
+                            String contraseña=document.getData().get("contraseña").toString();
+                            if(md5(contra).equals(contraseña)){
+                                Toast.makeText(LoginActivity.this,"Correct Login",Toast.LENGTH_SHORT).show();
+                                Login(usuario);
+                            }else{
+                                Toast.makeText(LoginActivity.this,"Incorrect User or Password",Toast.LENGTH_SHORT).show();
+                            }
+
+                        } else {
+                            Log.d("TAG", "No such document");
+
+
+                        }
+                    } else {
+                        Log.d("TAG", "get failed with ", task.getException());
+                        Toast.makeText(LoginActivity.this,"Error al registrar",Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+
+
+
+            //new loginTask(this,usuario,md5(contra)).execute();
 
 
 
@@ -149,6 +193,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
 
+
+
+
+    }
+    public void Login(String usuario){
+        SharedPreferences.Editor editor=mipreferencia.edit();
+        editor.putString("usuario",usuario);
+        editor.commit();
+        Intent intent=new Intent(this, drawermenu.class);
+        startActivity(intent);
+        finish();
 
 
 

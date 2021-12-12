@@ -50,7 +50,7 @@
                 android:scaleType="fitXY"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                ></ImageView>
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -133,6 +133,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/Txt_Forsale"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -158,15 +159,7 @@
 
             </LinearLayout>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="25"
-                android:layout_gravity="center"
-                android:text="@string/Edit"
-                android:layout_marginBottom="50dp"
-                android:fontFamily="@font/zone"
-                />
+
 
 
         </LinearLayout>

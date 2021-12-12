@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952232494400",
+    "project_id": "desarrollo-mobil",
+    "storage_bucket": "desarrollo-mobil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952232494400:android:02cab21fb59c71cc42e6a5",
+        "android_client_info": {
+          "package_name": "com.example.Mobil1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952232494400-uaoc2isj15nvdcgbnp54o3nujhncaccd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY5xH9Q7_-D9Pnstusr-gsjX954K2vwCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952232494400-uaoc2isj15nvdcgbnp54o3nujhncaccd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

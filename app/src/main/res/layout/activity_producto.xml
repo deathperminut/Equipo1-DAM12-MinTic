@@ -39,6 +39,7 @@
             android:gravity="center"
             >
             <TextView
+                android:id="@+id/nombre_producto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NAME PRODUCT"
@@ -68,6 +69,7 @@
                     android:background="@drawable/border">
 
                     <ImageView
+                        android:id="@+id/imagen_producto"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="15dp"
@@ -92,9 +94,10 @@
                         android:textColor="@color/purple_500"
                         android:fontFamily="@font/zone"/>
                     <TextView
+                        android:id="@+id/precio_producto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="150.000"
+                        android:text="nulo"
                         android:gravity="center_horizontal"
                         android:textSize="20dp"
                         android:scrollbars = "horizontal"/>
@@ -107,9 +110,10 @@
                         android:textColor="@color/purple_500"
                         android:fontFamily="@font/zone"/>
                     <TextView
+                        android:id="@+id/Amount_producto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="50"
+                        android:text="NN"
                         android:gravity="center_horizontal"
                         android:textSize="20dp"
                         android:scrollbars = "horizontal"/>
@@ -132,12 +136,14 @@
                     android:layout_height="match_parent"
                     android:layout_weight="35"
                     android:orientation="vertical"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border">
 
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
                         android:text="@string/detalles"
                         android:gravity="center_horizontal"
                         android:textSize="25dp"
@@ -145,16 +151,28 @@
                         android:fontFamily="@font/zone"
                         android:layout_margin="5dp"/>
                     <TextView
+                        android:id="@+id/informacion_producto"
                         android:layout_margin="5dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
                         android:text="@string/TermsConditions"
                         android:padding="5dp"
                         android:textSize="25dp"
+                        android:fontFamily="@font/login"
                         android:textAlignment="textStart"
                         android:scrollbars="vertical"
                         android:scrollbarThumbVertical="@android:color/darker_gray"
                         android:scrollbarSize="5dp"/>
+                    <Button
+                        android:id="@+id/Btn_Carrito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="10"
+                        android:fontFamily="@font/login"
+                        android:text="@string/añadir"
+                        android:layout_gravity="center"
+                        android:layout_margin="7dp"/>
 
 
                 </LinearLayout>
@@ -187,6 +205,7 @@
                     android:textColor="@color/purple_500"
                     android:fontFamily="@font/zone"/>
                 <TextView
+                    android:id="@+id/User_producto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Deathperminut"
@@ -194,6 +213,7 @@
                     android:textSize="20sp" />
 
                 <Button
+                    android:id="@+id/Btn_Seller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/menu_profile"
@@ -206,22 +226,7 @@
 
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_margin="10dp"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="40"
-                android:background="@drawable/border">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="15dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/silent_voice"
-                    />
-
-            </LinearLayout>
 
 
 

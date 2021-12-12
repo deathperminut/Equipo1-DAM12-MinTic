@@ -55,6 +55,7 @@
             android:fontFamily="@font/login"
             android:textSize="20sp"/>
         <Button
+            android:id="@+id/Btn_details"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="30"
@@ -63,10 +64,11 @@
             android:fontFamily="@font/login"
             android:textSize="20sp"/>
         <Button
+            android:id="@+id/Btn_favorites"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="40"
-            android:text="@string/añadir"
+            android:text="@string/favoritos"
             android:textAlignment="center"
             android:fontFamily="@font/login"
             android:textSize="20sp"/>

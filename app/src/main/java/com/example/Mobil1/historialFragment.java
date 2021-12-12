@@ -1,6 +1,7 @@
 package com.example.Mobil1;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -89,11 +90,18 @@ class HistorialAdapter  extends RecyclerView.Adapter<com.example.Mobil1.Historia
 
             String nombre=productos.getJSONObject(position).getString("nombre");
             String imagen=productos.getJSONObject(position).getString("imagen");
+            String precio=productos.getJSONObject(position).getString("precio");
             holder.name_rv.setText(nombre);
             Glide.with(miActividad).load(imagen).into(holder.image_rv);
             holder.button_hist_info.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    SharedPreferences miprefencia= miActividad.getSharedPreferences("MI_PREFERENCIA", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor=miprefencia.edit();
+                    editor.putString("nombre_producto",nombre);
+                    editor.putString("imagen_producto",imagen);
+                    editor.putString("precio_producto",precio);
+                    editor.commit();
                     Intent intent=new Intent(miActividad,producto.class);
                     miActividad.startActivity(intent);
                 }
@@ -107,7 +115,6 @@ class HistorialAdapter  extends RecyclerView.Adapter<com.example.Mobil1.Historia
         }catch (Exception  e)
         {
             String name="no se pudo";
-            String precio="no se pudo";
             holder.name_rv.setText(name);
 
 

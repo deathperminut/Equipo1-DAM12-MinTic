@@ -90,6 +90,7 @@
                                 android:fontFamily="@font/zone"
                                 android:textAlignment="center"/>
                             <EditText
+                                android:id="@+id/EditText_NameProduct"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="50"
@@ -118,6 +119,7 @@
                                 android:fontFamily="@font/zone"
                                 android:textAlignment="center"/>
                             <EditText
+                                android:id="@+id/EditText_AmountProduct"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="50"
@@ -144,12 +146,14 @@
                             android:orientation="vertical"
                             android:gravity="center">
                             <ImageView
+                                android:id="@+id/ImagView_ImageProduct"
                                 android:layout_width="100dp"
                                 android:layout_height="100dp"
                                 android:layout_gravity="center"
                                 android:src="@drawable/imagenno"
                                 android:scaleType="fitXY" />
                             <Button
+                                android:id="@+id/Btn_AddPicture"
                                 android:layout_width="wrap_content"
                                 android:layout_height="35dp"
                                 android:text="@string/camera"
@@ -164,6 +168,7 @@
                                 android:orientation="vertical">
 
                                 <EditText
+                                    android:id="@+id/EditText_InfoProduct"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:background="@drawable/border"
@@ -195,6 +200,7 @@
                             android:fontFamily="@font/zone"
                             android:textAlignment="center"/>
                         <EditText
+                            android:id="@+id/EditText_PriceProduct"
                             android:layout_margin="5dp"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -215,6 +221,7 @@
                         android:gravity="center">
 
                         <Button
+                            android:id="@+id/Btn_AddProduct"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_gravity="center"

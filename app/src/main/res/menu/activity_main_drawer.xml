@@ -21,9 +21,14 @@
             android:icon="@drawable/buy"
             android:title="@string/menu_Add"/>
         <item
+            android:id="@+id/nav_Favorites"
+            android:icon="@drawable/favorito"
+            android:title="@string/favorites"/>
+        <item
             android:id="@+id/nav_Exit"
             android:icon="@drawable/exit"
             android:title="@string/menu_exit"/>
+
 
     </group>
 </menu>
